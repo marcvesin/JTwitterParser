@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Parameters>
+  <TWEET>
+    <key name="id"/>
+    <key name="created_at"/>
+    <key name="text"/>
+    <key name="retweet_count"/>
+    <key name="coordinates"/>
+  </TWEET>
+  <USER>
+    <key name="id"/>
+    <key name="screen_name"/>
+    <key name="profile_image_url"/>
+    <key name="followers_count"/>
+    <key name="time_zone"/>
+  </USER>
+  <STREAM_GET>
+      <key name="stall_warnings" position="middle"/>
+      <key name="delimited" position="begin"/>
+  </STREAM_GET>
+  <STREAM_POST>
+      <key name="follow" position="begin"/>
+      <key name="track" position="end"/>
+      <key name="locations" position="begin"/>
+      <key name="delimited" position="begin"/>
+      <key name="stall_warnings" position="middle"/>
+  </STREAM_POST>
+  <TIMELINE>
+      <key name="user_id" position="end"/>
+      <key name="screen_name" position="end"/>
+      <key name="since_id" position="end"/>
+      <key name="count" position="begin"/>
+      <key name="max_id" position="begin"/>
+      <key name="trim_user" position="end"/>
+      <key name="exclude_replies" position="begin"/>
+      <key name="contributor_details" position="begin"/>
+      <key name="include_rts" position="begin"/>
+  </TIMELINE>
+  <SEARCH>
+    <key name="q" position="end"/>
+    <key name="geocode" position="begin"/>
+    <key name="lang" position="begin"/>
+    <key name="locale" position="begin"/>
+    <key name="result_type" position="end"/>
+    <key name="count" position="begin"/>
+    <key name="until" position="end"/>
+    <key name="since_id" position="end"/>
+    <key name="max_id" position="begin"/>
+    <key name="include_entities" position="begin"/>
+    <key name="callback" position="begin"/>
+  </SEARCH>
+  <LIMITE_RATE>
+    <key name="resources" position="end"/>
+  </LIMITE_RATE>
+</Parameters>
+
